@@ -7,6 +7,8 @@ cask "clipstack" do
   desc "Lightweight macOS menu bar clipboard manager with history"
   homepage "https://github.com/weiv/clipstack"
 
+  depends_on macos: ">= :ventura"
+
   app "ClipStack.app"
 
   zap trash: [
